@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Gallery</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="dogNav" class="nav-button active">🐶 Dogs</button>
+            <button id="duckNav" class="nav-button">🦆 Ducks</button>
+        </nav>
+        <h1 id="pageTitle">Random Dog Images</h1>
+    </header>
+    
+    <main>
+        <!-- Dog Section -->
+        <section id="dogSection" class="content-section">
+            <h2>Click the button to see a random dog!</h2>
+            <p>Powered by the <a href="https://dog.ceo/dog-api/" target="_blank">Dog API</a></p>
+            <button id="dogButton" class="action-button">Get Random Dog</button>
+            <div id="dogContainer" class="image-container"></div>
+        </section>
+
+        <!-- Duck Section -->
+        <section id="duckSection" class="content-section" style="display: none;">
+            <h2>Click the button to see a random duck!</h2>
+            <p>Powered by the <a href="https://random-d.uk/" target="_blank">Duck API</a></p>
+            <button id="duckButton" class="action-button">Get Random Duck</button>
+            <div id="duckContainer" class="image-container"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Made with ❤️ | Switch between dogs and ducks using the navigation above</p>
+    </footer>
+    
+    <script src="scripts/main.js"></script>
+</body>
+</html>
